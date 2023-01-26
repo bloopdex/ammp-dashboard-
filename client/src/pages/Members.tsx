@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Members() {
-  return <div>Members</div>
+  return <div>Members</div>;
 }
 
-export default Members
+export default Members;

@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'GDG RED' : '#EA4334',
-'GDG GREEN' : '#0D9D58',
-'GDG BLUE' : '#4285F4',
-'GDG YELLOW' : '#FCBC05',
-'GDG BLACK' : '#121212'
+        'GDG-RED': '#EA4334',
+        'GDG-GREEN': '#0D9D58',
+        'GDG-BLUE': '#4285F4',
+        'GDG-YELLOW': '#FCBC05',
+        'GDG-BLACK': '#121212',
       },
     },
   },
   plugins: [],
-}
+};

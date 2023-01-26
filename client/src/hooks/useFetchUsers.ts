@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import axios from 'axios'
+import { useState } from 'react';
+import axios from 'axios';
 
 const useFetchUsers = (url: string) => {
-  const [data, setData] = useState(null)
-  const [error, setError] = useState('')
-  const [loaded, setLoaded] = useState(false)
+  const [data, setData] = useState(null);
+  const [error, setError] = useState('');
+  const [loaded, setLoaded] = useState(false);
 
-  ;(async () => {
+  (async () => {
     try {
-      const response = await axios.get(url)
-      setData(response.data)
+      const response = await axios.get(url);
+      setData(response.data);
     } catch (error: any) {
-      setError(error.message)
+      setError(error.message);
     } finally {
-      setLoaded(true)
+      setLoaded(true);
     }
-  })()
+  })();
 
-  return { data, error, loaded }
-}
+  return { data, error, loaded };
+};
 
-export default useFetchUsers
+export default useFetchUsers;
