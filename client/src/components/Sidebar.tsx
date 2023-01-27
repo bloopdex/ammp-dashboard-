@@ -17,7 +17,7 @@ function Sidebar() {
    ];
    return (
       <div
-         className={` flex flex-col justify-between ${
+         className={` flex flex-col justify-between rounded-r-xl ${
             open ? 'w-72' : 'w-20 '
          } bg-GDG-BLACK h-screen p-5  pt-8 relative duration-300`}
       >

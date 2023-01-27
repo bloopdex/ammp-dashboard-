@@ -4,6 +4,6 @@
   "singleQuote": true,
   "doubleQuote": false,
   "printWidth": 80,
-  "tabWidth": 3,
+  "tabWidth": 2,
   "arrowParens": "avoid"
 }
