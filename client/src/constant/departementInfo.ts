@@ -30,6 +30,7 @@ export const devDepartementInfo: DepartmentProps = {
   leaders: devLeaders,
   projects: devProjectsCompletation,
   data: devDepartementData,
+  bgColor: 'GDG-BLUE',
 };
 export const designDepartementInfo: DepartmentProps = {
   path: 'design',
@@ -37,6 +38,7 @@ export const designDepartementInfo: DepartmentProps = {
   leaders: designLeaders,
   projects: designProjectsCompletation,
   data: designDepartementData,
+  bgColor: 'red-700',
 };
 export const multimediaDepartementInfo: DepartmentProps = {
   path: 'multimedia',
@@ -44,6 +46,7 @@ export const multimediaDepartementInfo: DepartmentProps = {
   leaders: multimediaLeaders,
   projects: multimediaProjectsCompletation,
   data: multimediaDepartementData,
+  bgColor: 'GDG-GREEN',
 };
 export const eventsDepartementInfo: DepartmentProps = {
   path: 'events',

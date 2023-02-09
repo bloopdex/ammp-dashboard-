@@ -2,7 +2,7 @@ import React from 'react';
 import { DepartmentProps } from '../pages/Departement';
 
 interface DepartementComponantProps {
-  bgColor: string;
+  bgColor?: string;
   members: number;
   departementInfo: DepartmentProps;
 }

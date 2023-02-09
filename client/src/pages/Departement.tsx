@@ -17,6 +17,7 @@ export interface DepartmentProps {
   leaders?: LeaderComponantProps[];
   projects?: ProjectCompletationProps;
   data?: DepartementDataProps;
+  bgColor?: string;
 }
 
 interface deparementPageProps {
