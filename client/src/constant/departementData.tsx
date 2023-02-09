@@ -27,3 +27,12 @@ export const logisticsDepartementData: DepartementDataProps = {
   totalMembers: 70,
   nextEvent: new Date(),
 };
+
+export const allDepartementData: DepartementDataProps[] = [
+  devDepartementData,
+  designDepartementData,
+  multimediaDepartementData,
+  communityDepartementData,
+  eventDepartementData,
+  logisticsDepartementData,
+];

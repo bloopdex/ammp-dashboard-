@@ -21,8 +21,8 @@ export const designLeaders: LeaderComponantProps[] = [
     role: 'GDG Leader',
   },
   {
-    name: 'STAILI Fatima',
-    role: 'Dev Leader',
+    name: 'Rami',
+    role: 'Design Leader',
   },
   {
     name: 'Abdelbasset Rezazi',

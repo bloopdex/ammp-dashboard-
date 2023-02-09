@@ -9,12 +9,16 @@ export interface EngagementProps {
 
 function EngagementComponant({ icon, title, data }: EngagementProps) {
   return (
-    <div className="flex flex-col items-start justify-center gap-4 h-40 w-60 p-4 relative rounded-2xl bg-[#faf4f0] text-black">
-      <div className="absolute left-[20%] top-[-2rem] p-4 rounded-2xl bg-[#fe4c24]">
+    <div className="flex flex-col items-start justify-center h-full gap-4 p-5 relative rounded-2xl bg-[#faf4f0] text-black">
+      <div className="absolute left-[20%] top-[-2rem] p-3 rounded-2xl bg-[#fe4c24]">
         {icon}
       </div>
-      <p className="text-xl">{title}</p>
-      <h1 className={`font-bold ${data!.length < 4 ? 'text-5xl' : 'text-4xl'}`}>
+      <p className="text-base lg:text-xl">{title}</p>
+      <h1
+        className={`font-bold ${
+          data!.length < 4 ? 'text-xl lg:text-3xl' : 'text-xl lg:text-3xl'
+        }`}
+      >
         {data}
       </h1>
     </div>

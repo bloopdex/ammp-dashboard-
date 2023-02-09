@@ -1,11 +1,16 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar, Sidebar } from './components/';
-import { devDepartementData } from './constant/departementData';
-import { devLeaders } from './constant/departementLeaders';
-import { devProjectsCompletation } from './constant/projectCompletation';
 import { Home, Members, NotFoundPage } from './pages';
 import Department from './pages/Departement';
+import { DepartementHome } from './pages/DepartementHome';
+import {
+  allDepartementInfo,
+  communityDepartementInfo,
+  designDepartementInfo,
+  devDepartementInfo,
+  eventsDepartementInfo,
+  logisticsDepartementInfo,
+  multimediaDepartementInfo,
+} from './constant/departementInfo';
 
 function App() {
   return (
@@ -17,26 +22,42 @@ function App() {
             <Route path="members" element={<Members />} />
           </Route>
           <Route path="/department">
-            <Route index element={<Department />} />
             <Route
-              path="dev"
+              index
               element={
-                <Department
-                  name="dev"
-                  leaders={devLeaders}
-                  projects={devProjectsCompletation}
-                  data={devDepartementData}
-                />
+                <DepartementHome allDepartmentInfo={allDepartementInfo} />
               }
             />
-            <Route path="design" element={<Department name="design" />} />
+            <Route
+              path="dev"
+              element={<Department departementData={devDepartementInfo} />}
+            />
+            <Route
+              path="design"
+              element={<Department departementData={designDepartementInfo} />}
+            />
             <Route
               path="multimedia"
-              element={<Department name="multimedia" />}
+              element={
+                <Department departementData={multimediaDepartementInfo} />
+              }
             />
-            <Route path="community" element={<Department name="community" />} />
-            <Route path="event" element={<Department name="event" />} />
-            <Route path="logistics" element={<Department name="logistics" />} />
+            <Route
+              path="events"
+              element={<Department departementData={eventsDepartementInfo} />}
+            />
+            <Route
+              path="logistics"
+              element={
+                <Department departementData={logisticsDepartementInfo} />
+              }
+            />
+            <Route
+              path="community"
+              element={
+                <Department departementData={communityDepartementInfo} />
+              }
+            />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
