@@ -17,11 +17,11 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
+          {/* <Route path="/">
             <Route index element={<Home />} />
             <Route path="members" element={<Members />} />
-          </Route>
-          <Route path="/department">
+          </Route> */}
+          <Route path="/">
             <Route
               index
               element={
@@ -30,33 +30,29 @@ function App() {
             />
             <Route
               path="dev"
-              element={<Department departementData={devDepartementInfo} />}
+              element={<Department departmentData={devDepartementInfo} />}
             />
             <Route
               path="design"
-              element={<Department departementData={designDepartementInfo} />}
+              element={<Department departmentData={designDepartementInfo} />}
             />
             <Route
               path="multimedia"
               element={
-                <Department departementData={multimediaDepartementInfo} />
+                <Department departmentData={multimediaDepartementInfo} />
               }
             />
             <Route
               path="events"
-              element={<Department departementData={eventsDepartementInfo} />}
+              element={<Department departmentData={eventsDepartementInfo} />}
             />
             <Route
               path="logistics"
-              element={
-                <Department departementData={logisticsDepartementInfo} />
-              }
+              element={<Department departmentData={logisticsDepartementInfo} />}
             />
             <Route
               path="community"
-              element={
-                <Department departementData={communityDepartementInfo} />
-              }
+              element={<Department departmentData={communityDepartementInfo} />}
             />
           </Route>
           <Route path="*" element={<NotFoundPage />} />

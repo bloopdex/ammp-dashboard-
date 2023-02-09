@@ -21,7 +21,7 @@ export interface DepartmentProps {
 }
 
 interface deparementPageProps {
-  departementData: DepartmentProps;
+  departmentData: DepartmentProps;
 }
 
 function LeaderComponant({ pic, name, role }: LeaderComponantProps) {
@@ -39,7 +39,7 @@ function LeaderComponant({ pic, name, role }: LeaderComponantProps) {
   );
 }
 
-function Department({ departementData }: deparementPageProps) {
+function Department({ departmentData: departementData }: deparementPageProps) {
   const engagementData: EngagementProps[] = [
     {
       title: 'Total Members',
@@ -94,7 +94,10 @@ function Department({ departementData }: deparementPageProps) {
         </div>
 
         <div className="col-span-3 lg:col-span-4 row-span-3 p-8 rounded-3xl flex flex-col justify-around bg-GDG-BLUE">
-          {/* <LineChart /> */}{' '}
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/85/Charts_SVG_Example_2_-_Simple_Line_Chart.svg"
+            className="w-full h-full"
+          />
         </div>
 
         <div className="col-span-full row-span-2 p-8 rounded-3xl flex flex-row justify-around items-center bg-[#d9bda9]">
